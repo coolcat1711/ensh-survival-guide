@@ -88,6 +88,10 @@ p {
     aspect-ratio: 1 / 1;
 }
 
+.category-item-link {
+    text-decoration: none;
+}
+
 @media (min-aspect-ratio: 4/3) { 
     .category-item-img {
         width: 40%;
