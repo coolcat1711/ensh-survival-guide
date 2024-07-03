@@ -1,5 +1,4 @@
 .oshw-logo {
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -26,7 +25,6 @@
     width: 90%;
     margin: 10px auto;
     /* border: 3px dotted #5555FF; */
-    padding: 8px;
     overflow: auto;
 }
 
@@ -35,9 +33,9 @@
 }
 
 .category-item {
-    max-width: 25%;
-    min-width: 20%;
-    float: left;
+    /* max-width: 25%; */
+    /* min-width: 20%; */
+    display: inline-block;
 }
 
 .category-item-txt {
@@ -47,22 +45,22 @@
 
 .category-item-img {
     aspect-ratio: 1 / 1;
+    width: 40%;
+    margin: 0 30%;
 }
 
 .category-item-link {
     text-decoration: none;
 }
 
-@media (min-aspect-ratio: 4/3) { 
-    .category-item-img {
-        width: 40%;
-        margin: 0 30%;
+@media (min-aspect-ratio: 1/1) { 
+    .category-item {
+        width: 20%;
     }
 }
 
-@media (max-aspect-ratio: 4/3) { 
-    .category-item-img {
-        width: 60%;
-        margin: 0 20%;
+@media (max-aspect-ratio: 1/1) { 
+    .category-item {
+        width: 25%;
     }
 }
