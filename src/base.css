@@ -15,14 +15,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     border: 10px groove #0000AA;
+    padding: 10px;
 }
 
-@media (min-aspect-ratio: 4/3) { 
+@media (min-aspect-ratio: 1/1) { 
     .toplevel-container {
-        width: 60vw;
+        width: 50vw;
     }
 }
-@media (max-aspect-ratio: 4/3) {
+@media (max-aspect-ratio: 1/1) {
     .toplevel-container {
         width: 80vw;
     }
@@ -34,4 +35,10 @@ h1, h2, h3, h4, h5, h6, p  {
 
 p {
     font-size: 16px;
+}
+
+.link-dotted {
+    border-bottom: 2px dotted #54FC54;
+    text-decoration: none;
+    color: #54FC54;
 }
