@@ -23,7 +23,7 @@
 
 .category-container {
     width: 90%;
-    margin: 10px auto;
+    margin: 5px auto;
     /* border: 3px dotted #5555FF; */
     overflow: auto;
 }
