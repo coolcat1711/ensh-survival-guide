@@ -29,7 +29,8 @@
 }
 
 .category-title {
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .category-item {
@@ -40,7 +41,8 @@
 
 .category-item-txt {
     text-align: center;
-    margin-top: 7px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .category-item-img {
