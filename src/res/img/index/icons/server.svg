@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="server.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.08625"
+     inkscape:cx="399.5397"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+  </defs>
+  <g
+     id="roll_brush"
+     data-name="roll brush">
+    <rect
+       class="cls-1"
+       x="1.45"
+       y="1.48"
+       width="21.1"
+       height="6.71"
+       id="rect1" />
+    <rect
+       class="cls-1"
+       x="1.45"
+       y="8.19"
+       width="21.1"
+       height="6.71"
+       id="rect2" />
+    <line
+       class="cls-1"
+       x1="9.12"
+       y1="3.4"
+       x2="9.12"
+       y2="5.32"
+       id="line2" />
+    <line
+       class="cls-1"
+       x1="9.12"
+       y1="10.11"
+       x2="9.12"
+       y2="12.03"
+       id="line3" />
+    <line
+       class="cls-1"
+       x1="5.29"
+       y1="3.4"
+       x2="5.29"
+       y2="5.32"
+       id="line4" />
+    <line
+       class="cls-1"
+       x1="5.29"
+       y1="10.11"
+       x2="5.29"
+       y2="12.03"
+       id="line5" />
+    <line
+       class="cls-1"
+       x1="23.51"
+       y1="20.66"
+       x2="13.92"
+       y2="20.66"
+       id="line6" />
+    <line
+       class="cls-1"
+       x1="10.08"
+       y1="20.66"
+       x2="0.49"
+       y2="20.66"
+       id="line7" />
+    <rect
+       class="cls-1"
+       x="10.08"
+       y="18.74"
+       width="3.84"
+       height="3.84"
+       id="rect7" />
+    <line
+       class="cls-1"
+       x1="12"
+       y1="14.91"
+       x2="12"
+       y2="18.74"
+       id="line8" />
+    <line
+       class="cls-1"
+       x1="19.67"
+       y1="4.36"
+       x2="15.84"
+       y2="4.36"
+       id="line9" />
+    <line
+       class="cls-1"
+       x1="19.67"
+       y1="11.07"
+       x2="15.84"
+       y2="11.07"
+       id="line10" />
+  </g>
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:4.62232"
+     d="M 304.71807,752.12888 V 719.90794 H 160.64442 16.570771 V 688.60759 657.30725 H 160.64442 304.71807 v -32.22094 -32.22095 h 31.76064 31.76065 V 560.64442 528.42348 H 192.40506 16.570771 V 272.95742 17.491369 H 400 783.42923 V 272.95742 528.42348 H 607.59494 431.76064 v 32.22094 32.22094 h 31.76065 31.76064 v 32.22095 32.22094 h 144.07365 144.07365 v 31.30034 31.30035 H 639.35558 495.28193 v 32.22094 32.22095 H 400 304.71807 Z M 432.68124,688.60759 V 656.38665 H 400 367.31876 v 32.22094 32.22095 H 400 432.68124 Z M 719.90794,384.81013 V 304.71807 H 400 80.09206 v 80.09206 80.09206 H 400 719.90794 Z m 0,-223.70541 V 81.012658 H 400 80.09206 v 80.092062 80.09206 H 400 719.90794 Z"
+     id="path10"
+     transform="scale(0.03)" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:4.62232"
+     d="m 144.53395,369.15995 v -31.30034 h 31.76064 31.76065 v 31.30034 31.30035 h -31.76065 -31.76064 z"
+     id="path11"
+     transform="scale(0.03)" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:4.62232"
+     d="M 144.53395,145.45455 V 114.1542 h 31.76064 31.76065 v 31.30035 31.30034 h -31.76065 -31.76064 z"
+     id="path12"
+     transform="scale(0.03)" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:4.62232"
+     d="M 272.49712,145.45455 V 114.1542 h 31.30035 31.30034 v 31.30035 31.30034 h -31.30034 -31.30035 z"
+     id="path13"
+     transform="scale(0.03)" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:4.62232"
+     d="m 272.49712,369.15995 v -31.30034 h 31.30035 31.30034 v 31.30034 31.30035 h -31.30034 -31.30035 z"
+     id="path14"
+     transform="scale(0.03)" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:4.62232"
+     d="m 528.42348,369.15995 v -31.30034 h 63.52128 63.52129 v 31.30034 31.30035 h -63.52129 -63.52128 z"
+     id="path15"
+     transform="scale(0.03)" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:4.62232"
+     d="M 528.42348,145.45455 V 114.1542 h 63.52128 63.52129 v 31.30035 31.30034 h -63.52129 -63.52128 z"
+     id="path16"
+     transform="scale(0.03)" />
+</svg>
