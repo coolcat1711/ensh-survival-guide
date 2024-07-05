@@ -8,6 +8,8 @@ A guide to survive enshittification happening in today's tech world
 - Divide Jackett installation guide to seperate pages
 - Write "What is FOSS" ASAP
 - Choosing good software guide (how to avoid shovelware)
+- Opendirectories search guide (no emcouraging piracy)
+- OSINT Maybe
 
 # TODO: Advanced Section
 - Build your own cloud! (requires UNIX and Networking skills)
