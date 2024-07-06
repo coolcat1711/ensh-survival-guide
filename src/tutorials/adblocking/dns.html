@@ -9,12 +9,123 @@
 </head>
 <body>
     <div class="toplevel-container">
-        <h1></h1>
+        <h1>&#128679;Adblocking - DNS&#128679;</h1>
         <a href="/index.html" class="link-dotted-lgreen">&lt Back to Home</a>
     </div>
 
     <div class="toplevel-container">
-
+        <h2>What is DNS?</h2>
+        <p>
+            The Domain Name System (DNS), according to <a href="https://www.cloudflare.com/learning/dns/what-is-dns/">Cloudflare</a>,
+            is the phone book of the internet.
+        </p>
+        <p>
+            DNS is the system that takes easy to remember website names like "youtube.com" or "google.com" and
+            converts them into a form that computers can understand (an IP address). When you type "youtube.com" into your web browser,
+            your computer likely asks your Internet Service Provider (ISP) if they know who "youtube.com" is. If your ISP has
+            a record for "youtube.com", they will reply with an IP address and your computer will ask Youtube
+            (via their IP address) to send their website to your computer.
+        </p>
+        <h2>What does that have to do with blocking Ads?</h2>
+        <p>
+            Ads embedded within websites are usually served with addresses that need to be resolved with DNS!
+        </p>
+        <p>
+            This means that if we can stop our computers from getting the IP addresses for the Ad servers,
+            we can stop our computers from downloading ads in the first place! That means our goal is to
+            set up a system that blocks DNS lookups for sites we don't want (Ad servers), while allowing
+            lookups for sites we do want.
+        </p>
+        <h2>What are our options?</h2>
+        <p>
+            <ol>
+                <li>Using an existing Adblock DNS server <a href="#option1">(jump)</a></li>
+                    <ul>
+                        <li>Pros</li>
+                        <ul>
+                            <li>Easiest option.</li>
+                            <li>Doesn't require hosting a local server.</li>
+                            <li>Gives a good starting point for those unfamiliar with DNS Adblocking</li>
+                        </ul>
+                        <li>Cons</li>
+                        <ul>
+                            <li>Depending on the server used, there can be privacy and/or security concerns.</li>
+                            <li>No control over adding/removing entries if you encounter problems.</li>
+                        </ul>
+                    </ul>
+                <li>Hosting our own Adblock DNS server <a href="#option2">(jump)</a></li>
+                <ul>
+                    <li>Pros</li>
+                        <ul>
+                            <li>Gives maximum control over what servers are blocked or allowed.</li>
+                            <li>
+                                No risk of privacy or security concerns since DNS requests are
+                                handled on your local server.
+                            </li>
+                        </ul>
+                    <li>Cons</li>
+                        <ul>
+                            <li>Ideally, you'll want a dedicated device to host this on (may cost $).</li>
+                            <li>May occasionally need to troubleshoot problems if they occur (moderate technical expertise).</li>
+                            <li>Setup required which needs minor technical expertise and some light reading.</li>
+                        </ul>
+                </ul>
+            </ol>
+        </p>
+        <h2 id="option1">1.) Using an existing Adblock DNS server</h2>
+        <h3>What should I look for when choosing a public DNS server?</h3>
+        <p>
+            When choosing a publicly available DNS server to use, there's a few things to consider:
+            <ul>
+                <li>What region of the world is the server located relative to where you are?</li>
+                <li>What content does the server block?</li>
+                <li>Can you trust the server's host?</li>
+            </ul>
+        </p>
+        <p>
+            Why do these things matter?
+        </p>
+        <p>
+            Every request to a new website has to go through the chosen DNS server to get
+            resolved into an IP address. This means that you have to wait for the DNS
+            response to come back from the DNS server before your computer can start loading
+            the website you want.
+        </p>
+        <p>
+            Normally, your ISP will handle DNS requests coming from devices
+            on your network which would be local to you. However, when you change the default DNS
+            server, you can end up choosing a server that can be far away. If your DNS server is
+            located across the globe from you, the process of resolving requests will take longer
+            than if your DNS server was local and can make browsing the web feel sluggish.
+        </p>
+        <p>
+            Your choice of DNS server can also affect what content is allowed and what content is blocked.
+        </p>
+        <p>
+            For example, there are some DNS servers that explictly block adult content. This can be
+            desirable if you have young kids at home and want to avoid mishaps with them accidentally
+            being served this content or going to adult sites.
+        </p>
+        <p>
+            This type of blocking could serve to be a problem though if you want to be able to navigate to
+            adult content on your home network. Also, sometimes normal sites you use can be included in the
+            server's "blocked" list. When using a public DNS server, you don't have the ability to granularly
+            adjust what is available and what is blocked. This is a situation where hosting
+            your own server may be desirable.
+        </p>
+        <p>
+            Lastly, it is important to be able to trust your chosen DNS server due to privacy and
+            security concerns.
+        </p>
+        <p>
+            Because your computer has to make a DNS request in order to get a website's IP address,
+            your DNS server can track what websites you visit. Additionally, a malicious server
+            could give you an incorrect website IP address that could unknowingly take you to
+            malicious sites without your knowledge. While the risk of malicious DNS servers
+            are lower when using reputable servers, the risk of DNS servers aggregating and selling
+            your usage data is high.
+        </p>
+        <h2 id="option2">2.) Hosting our own Adblock DNS server</h2>
     </div>
 
     <div class="toplevel-container" style="justify-content: center; display: flex;">
