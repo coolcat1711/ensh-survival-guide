@@ -1,5 +1,5 @@
 # What is metasearch
-Metasearch is the action of searching multiple websites at the same time. We will be using jackett for this tutorial. Metasearch engines are not usually publicly available like Google or Bing so in this tutorial we will be hosting one in our own computer. Jackett is the metasearch engine we will be using
+Metasearch is the action of searching multiple websites at the same time. We will be using Jackett for this tutorial. Metasearch engines are not usually publicly available like Google or Bing so in this tutorial we will be hosting one on our own computer. Jackett is the metasearch engine we will be using
 
 # Installing Jackett (Windows)
 1. Go to [Jackett's Github Page](https://github.com/Jackett/Jackett/releases/)
@@ -13,7 +13,7 @@ Arch Linux users, Jackett is available on AUR. You can just run "yay -S jackett-
 
 For other Linux users:
 1. Go to [Jackett's Github Page](https://github.com/Jackett/Jackett/releases/)
-3. You may check your architecture with "uname -m" command but on most computers, it's probably AMDx64. x86_64 = AMDx64, aarch64 = ARM64, armv<number> = ARM32, 
+3. You may check your architecture with the "uname -m" command but on most computers, it's probably AMDx64. x86_64 = AMDx64, aarch64 = ARM64, armv<number> = ARM32, 
 4. Click on "Jackett.Binaries.Linux<your architecture>.tar.gz"
 TODO
 Try the "Musl" one if it doesn't work
