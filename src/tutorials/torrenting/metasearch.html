@@ -3,20 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Torrenting - Advanced Searching</title>
     <link rel="stylesheet" href="/base.css">
     <link rel="stylesheet" href="/tutorials/tutorial.css">
 </head>
 <body>
     <div class="toplevel-container">
-        <h1></h1>
+        <h1>Torrenting - Advanced Searching</h1>
         <a href="/index.html" class="link-dotted-lgreen">&lt Back to Home</a>
     </div>
 
     <div class="toplevel-container">
+        <h2>Prerequisites</h2>
         <p>
-            TODO: this page will explain how to use metasearch
-            engines like jackett
+            This guide is an addition on top of "Torrenting - Basics". You
+            need to read that first before you can use Jackett.
+        </p>
+        
+        <h2>What is metasearch</h2>
+        <p>
+            Metasearch is the action of searching multiple websites at the
+            same time. We will be using Jackett for this tutorial. Metasearch
+            engines are not usually publicly available like Google or Bing so
+            in this tutorial we will be hosting one on our own computer.
+            Jackett is the metasearch engine we will be using
+        </p>
+        
+        <h2>Installing Jackett (Windows)</h2>
+        <ul>
+            <li>Go to <a href="https://github.com/Jackett/Jackett/releases/" class="link-dotted-lgreen">Jackett's Github Page</a></li>
+            <li>Click on "Jackett.Binaries.Windows.zip</li>
+            <li>Extract the zip file and run the file called "jackett_launcher"</li>
+            <li>Right click on the jackett icon in the "systray" and click "Open Web UI". Or you can click <a href="http://127.0.0.1:9117" class="link-dotted-lgreen" target="_blank">here</a> to open it</li>
+        </ul>
+        
+        <h2>Installing Jackett (Linux)</h2>
+        <p>
+            Arch Linux users, Jackett is available on AUR. You can just
+            run "yay -S jackett-bin" to install. You need to run
+            "sudo systemctl start jackett" every time you need jackett or
+            you can set it to start on boot with
+            "sudo systemctl enable jackett". Go to
+            <a href="http://127.0.0.1:9117" class="link-dotted-lgreen" target="_blank">127.0.0.1:9117</a>
+            with a browser to access the WebUI
+        </p>
+        
+        <b>For other Linux users:</b>
+        <ul>
+            <li>Go to <a href="https://github.com/Jackett/Jackett/releases/" class="link-dotted-lgreen">Jackett's Github Page</a></li>
+            <li>You may check your architecture with the "uname -m" command but on most computers, it's probably AMDx64. x86_64 = AMDx64, aarch64 = ARM64, armv<number> = ARM32, </li>
+            <li>Download "Jackett.Binaries.Linux<your architecture>.tar.gz"  </li>
+            <li>Run "jackett_launcher.sh"</li>
+        </ul>
+        <p>Try the "Musl" one if it doesn't work</p>
+        
+        <h2>Installing Jackett (MacOS)</h2>
+        <ul>
+            <li>You need macOS 12.0+ (Monterey) or greater</li>
+            <li>Go to <a href="https://github.com/Jackett/Jackett/releases/" class="link-dotted-lgreen">Jackett's Github Page</a></li>
+            <li>If your mac has a ARM CPU (M1, M2...) download Jackett.Binaries.macOSARM64.tar.gz, if it has an Intel CPU download Jackett.Binaries.macOS.tar.gz. You can find out this by clicking the apple logo on top left corner and then clicking "About this Mac"</li>
+            <li>Extract the downloaded file.</li>
+            <li>Open the extracted folder and double-click on "jackett".</li>
+            <li>Jackett is now running. Go to 127.0.0.1:9117 with a web browser. Or you can click <a href="http://127.0.0.1:9117" class="link-dotted-lgreen" target="_blank">here</a></li>
+        </ul>
+    
+        
+        <h2>How to add "Indexers"</h2>
+        <p>
+            Indexers are websites with collections of torrents. You can add
+            indexers you like or you can add all of them.
+        </p>
+        
+        <p>
+            Click on the "Add indexer" button in Jackett UI to open the
+            indexer adding menu. This is a list of all indexers Jackett
+            supports. Public ones are the ones you should be using for now
+            because "Private Indexers" only allow experienced torrenters
+            who contribute to the community by seeding
+            (sending files to others). Don't worry though, public indexers
+            are good enough for most people.
+        </p>
+        
+        <p>
+            Anyways, here, you can tick the indexers you wanna add and then
+            click the "Add selected" button way on the bottom.
+        </p>
+        
+        <h2>Add all public indexers</h2>
+        <p>
+            This is not recommended but it's also the way I use Jackett.
+            It's not advised to search all indexers if you are looking
+            for an executable (computer app). But it's perfectly safe if
+            you are gonna download a video, image or text
+        </p>
+        
+        <b>Here's how you quickly add all public indexers:</b>
+        <ul>
+            <li>Click on the "Add indexer" button</li>
+            <li>Press F12 on your keyboard. A bunch of code will appear on the side.</li>
+            <li>Find the "Console" tab in there</li>
+            <li>Paste the code below in the console and press enter (in chrome, you need to type "allow pasting", press enter and then paste it)</li>
+        </ul>
+        
+        <div class="box-dotted-lmagenta">
+            <p>var chs = document.querySelectorAll('.checkboxColumn input[type="checkbox"]');</p>
+            <p>for (let i = 0; i &lt; chs.length; i++) {chs[i].checked=true;}</p>
+        </div>
+        <h2>Downloading apps blindly can be dangerous</h2>
+        <p>
+            Don't run .exe files disguised as movies. If you are downloading
+            an app, only download apps from trustworthy "distributors".
+            Look for online posts about a distributor before downloading
+            their torrents
+        </p>
+        <p>
+            For example a torrent could be named Fun.Game.3.MULTi13-ElAesistril.
+            In this case you should search "Is ElAesistril trustworthy?" before
+            downloading and running it. You should seek real people's comments
+            which is mostly on reddit and other forums
         </p>
     </div>
 
