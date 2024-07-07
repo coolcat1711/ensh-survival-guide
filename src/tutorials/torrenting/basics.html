@@ -14,7 +14,174 @@
     </div>
 
     <div class="toplevel-container">
+        <h2>What is BitTorrent </h2>
 
+        <p>
+            BitTorrent is a P2P (peer-to-peer) file-sharing protocol.
+            "Protocol" in this context means "internet protocol", the
+             procedure used for transmitting data over the internet (ex.
+             HTTP, FTP, SMTP). However, most internet protocols are
+             centralized, meaning there is a "server" that sends the
+            data when the user requests a file.
+        </p>
+        <p>
+            Peer-to-peer means there is no central server, instead,
+            people who previously downloaded the files send them to people
+             who want those files.
+        </p>
+        <p>
+            BitTorrent is not just for piracy. It's a tool for sharing files.
+             What purpose to use it depends on you.
+        </p>
+        
+        <h2>Terminology </h2>
+        <p><b>Seeder:</b> The person who sends the file</p>
+        <p><b>Leecher:</b> The person who receives the file</p>
+        <p><b>Peer:</b> A seeder or leecher. BitTorrent users.</p>
+        <p><b>Tracker:</b> Coordination servers that keep track of who has 
+            which file and who wants which file</p>
+        
+        <h2>Can I get in trouble for torrenting?</h2>
+        <p>
+            Everyone can see what you download including your internet
+            service provider. 
+            <a class="link-dotted-lgreen" href="https://iknowwhatyoudownload.com">iknowwhatyoudownload.com</a>
+            shows what files you and people who had the same IP
+            as you downloaded
+        </p>
+        
+        <b>
+            Service providers can send you a fine or a warning for downloading
+            pirated content. Downloading illegal stuff like drug/bomb recipes
+            will get you in trouble with authorities.
+        </b>
+        
+        <p>
+            As long as you don't pirate anything you should be fine.
+            However, it is always recommended to use a VPN while torrenting.
+            <b style="color: #FD5454;">
+                You should bind your VPN to your torrent client if you
+                don't want people to see what you download
+            </b>
+        </p>
+        <p>See <a href="#vpn-binding" class="link-dotted-lgreen">How to bind your VPN</a></p>
+        
+        <h2>Torrent Clients</h2>
+        <p>
+            Torrent client is the software that allows people to 
+            communicate using the BitTorrent protocol. Much like how 
+            a Web Browser will enable you to communicate using the HTTP 
+            protocol
+        </p>
+        
+        <p>Desktop (Windows, MacOS, Linux, BSD...) - 💻 </p>
+        <p>iOS/iPadOS - 🍎 </p>
+        <p>Android - 🤖 </p>
+        
+        <b>Popular torrent clients</b>
+        <ul>
+            <li>- qBittorrent 💻 </li>
+            <li>- Deluge 💻 (complicated VPN binding)</li>
+            <li>- Transmission 💻 (no VPN binding support)</li>
+            <li>- LibreTorrent 🤖 (no VPN binding support)</li>
+            <li>- BiglyBT 🤖 💻 </li>
+            <li>- iTransmission 🍎 (requires sideloading or jailbreak)</li>
+            <li>- iTorrent 🍎 (requires sideloading or jailbreak)</li>
+        </ul>
+
+        <p>
+            All these clients are open source. Avoid using proprietary
+            BitTorrent clients.
+        </p>
+        <a href="/tutorials/explanations/foss.html" class="link-dotted-lgreen">What is Open Source and FOSS (free and open source)?</a>
+        
+        <p>
+            My choice is qBittorrent on desktop and BiglyBT on mobile. You
+            can start your torrent client after downloading it.
+        </p>
+
+        <h2>Recommended VPNs</h2>
+        <p>
+            I recommend Mullvad (paid) or RiseUp VPN (free) both of them
+            are extremely trustworthy and run by poeple who 
+            won't snitch on you
+        </p>
+        
+        <h2 id="vpn-binding">How to bind your VPN</h2>
+        <p>
+            After this process, your torrent client will refuse to make
+            any connections if your VPN is not connected or when your VPN
+            gets disconnected. This process is different for every client
+            and I'll only be explaining some of them. Search on Google if
+            your client is not included
+        </p>
+        
+        <b>qBittorrent <a class="link-dotted-lgreen" href="https://www.reddit.com/r/VPNTorrents/comments/ssy8vv/guide_bind_vpn_network_interface_to_torrent/">source</a></b>
+        <ul>
+            <li>Go to Preferences, and then Advanced tab.</li>
+            <li>Check for the differences on the "Network Interface" list when you connect/disconnect the VPN (you may have to restart qBittorrent for the list to refresh).</li>
+            <li>Select the one that shows up/disappears from the previous test.</li>
+            <li>Restart qBittorrent.</li>
+        </ul>
+        
+        <b>BiglyBT (Android) <a class="link-dotted-lgreen" href="https://www.reddit.com/r/VPNTorrents/comments/ppmnax/howto_safely_torrent_on_android_with_biglybt/">source</a></b>
+        <ul>
+            <li>Connect to the VPN</li>
+            <li>Go to BiglyBT Settings, Scroll down, and go to "Full Settings > Mode"</li>
+            <li>Under Mode, select "Advanced" to show all settings, go back</li>
+            <li>Connection > Advanced Network Settings</li>
+            <li>Look at the gray text under "Bind to local IP address or interface". These are the available network adapters/IPs. Only when your VPN is enabled will you see its additional interfaces. In my case, it is "tun0". It should always be something like tun<number></li>
+            <li><b style="color: #FD5454;">YOU MUST DO THIS TOO:</b> Scroll down, enable "Check bind ... on startup" and "Enforce IP bindings ..." and "Pause downloads on loss on binding"  (this last one is mostly optional)</li>
+        </ul>
+
+        <b>Deluge</b>
+        <p>
+            Binding on deluge is a little complicated but I'm gonna
+            drop the official guide
+            <a class="link-dotted-lgreen" href="https://dev.deluge-torrent.org/wiki/UserGuide/VPN">here</a>
+        </p>
+        
+        <h2>What are .torrent files</h2>
+        <p>
+            You can think of them as a link to the file you want to download.
+             A torrent file contains the data you'll need for the files to
+             be downloaded, such as file names, sizes, and structure, as
+             well as the servers you can contact to request a list of peers
+             to connect to.
+        </p>
+        
+        <h2>Where do I find .torrent files</h2>
+        <p>
+            You can find "Torrent Trackers" on Google and search for files
+            on these websites. But using a metasearch engine (a search engine
+            that searches every website you add) will be a better experience.
+            Check out our [Advanced Search/Metasearch Guide]
+        </p>
+        
+        <h2>Seeding</h2>
+        <p>
+            You should be encouraged to leave the torrent in the "seeding"
+            state for a while after the download is completed. Remember, in
+            BitTorrent people download files from other people's computers.
+            By seeding, you are sharing the file you just downloaded with
+            the others.
+        </p>
+        
+        <h2>Downloading apps blindly can be dangerous</h2>
+        <p>
+            Don't run .exe files disguised as movies. If you are downloading
+            an app, only download apps from trustworthy "distributors".
+            Look for online posts about a distributor before downloading
+            their torrents
+        </p>
+        
+        <p>
+            For example a torrent could be named
+            Fun.Game.3.MULTi13-ElAesistril. In this case you should search
+            "Is ElAesistril trustworthy?" before downloading and running it.
+            You should seek real people's comments which is mostly on
+            reddit and other forums
+        </p>
     </div>
 
     <div class="toplevel-container" style="justify-content: center; display: flex;">
