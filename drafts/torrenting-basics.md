@@ -67,3 +67,11 @@ You can think of them as a link to the file you want to download. A torrent file
 
 # Where do I find .torrent files
 You can find "Torrent Trackers" on Google and search for files on these websites. But using a metasearch engine (a search engine that searches every website you add) will be a better experience. Check out our [Advanced Search/Metasearch Guide]
+
+# Seeding
+You should be encouraged to leave the torrent in the "seeding" state for a while after the download is completed. Remember, in BitTorrent people download files from other people's computers. By seeding, you are sharing the file you just downloaded with the others.
+
+# Downloading apps blindly can be dangerous
+Don't run .exe files disguised as movies. If you are downloading an app, only download apps from trustworthy "distributors". Look for online posts about a distributor before downloading their torrents
+
+For example a torrent could be named Fun.Game.3.MULTi13-ElAesistril. In this case you should search "Is ElAesistril trustworthy?" before downloading and running it. You should seek real people's comments which is mostly on reddit and other forums
