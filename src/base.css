@@ -40,7 +40,7 @@ a {
     color: #54FC54
 }
 
-p {
+p, b, li{
     font-size: 17px;
 }
 
