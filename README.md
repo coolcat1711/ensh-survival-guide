@@ -10,9 +10,6 @@ Hosted on [survival.aesistril.com](https://survival.aesistril.com)
 - How to remove malware from your computer
 - Booting disks and what is UEFI (for How to remove malware from your computer)
 - Fediverse Guide
-- Make extension installation more idiot-proof
-- ff android extension install guide
-- Replace "Chromium" with "Blink"
 - Write "What is FOSS" ASAP
 - Choosing good software guide (how to avoid shovelware)
 - Opendirectories search guide (no emcouraging piracy)
