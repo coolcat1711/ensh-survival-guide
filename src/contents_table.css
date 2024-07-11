@@ -1,0 +1,18 @@
+.outer-contents-container {
+    width: 45%;
+    margin-left: 10px;
+    border: 10px groove #0000AA;
+}
+
+.contents-container-button {
+    background-color: #54FC54;
+}
+
+.collapsable-contents-container {
+    display: block;
+    overflow: hidden;
+}
+
+.page-contents {
+    list-style-type: circle;
+}
