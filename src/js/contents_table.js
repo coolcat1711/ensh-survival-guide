@@ -34,8 +34,8 @@ class ContentsList extends HTMLDivElement
                 ulElem.appendChild(liElem)
                 let aElem = document.createElement("a");
                 liElem.appendChild(aElem);
-                aElem.setAttribute("href", "#" + tagName)
-                aElem.setAttribute("style", "white-space: nowrap;")
+                aElem.setAttribute("href", "#" + tagName);
+                aElem.setAttribute("style", "white-space: nowrap;");
                 aElem.innerText = hElem.innerText;
                 if(currentDepth > 0)
                 {
@@ -55,7 +55,8 @@ class ContentsList extends HTMLDivElement
                 let liElem = document.createElement("li");
                 let aElem = document.createElement("a");
                 liElem.appendChild(aElem);
-                aElem.setAttribute("href", "#" + tagName)
+                aElem.setAttribute("href", "#" + tagName);
+                aElem.setAttribute("style", "white-space: nowrap;");
                 aElem.innerText = hElem.innerText;
                 depthHierarchy[currentDepth - 1].append(liElem);
                 return;
@@ -70,7 +71,8 @@ class ContentsList extends HTMLDivElement
                 let liElem = document.createElement("li");
                 let aElem = document.createElement("a");
                 liElem.appendChild(aElem);
-                aElem.setAttribute("href", "#" + tagName)
+                aElem.setAttribute("href", "#" + tagName);
+                aElem.setAttribute("style", "white-space: nowrap;");
                 aElem.innerText = hElem.innerText;
                 depthHierarchy[currentDepth - 1].append(liElem);
                 return;
