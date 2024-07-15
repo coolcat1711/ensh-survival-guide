@@ -35,6 +35,7 @@ class ContentsList extends HTMLDivElement
                 let aElem = document.createElement("a");
                 liElem.appendChild(aElem);
                 aElem.setAttribute("href", "#" + tagName)
+                aElem.setAttribute("style", "white-space: nowrap;")
                 aElem.innerText = hElem.innerText;
                 if(currentDepth > 0)
                 {
