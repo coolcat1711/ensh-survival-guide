@@ -10,7 +10,9 @@
 
 .collapsable-contents-container {
     display: block;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .page-contents {
