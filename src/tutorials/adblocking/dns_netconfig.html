@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/tutorials/tutorial.css">
+    <link rel="stylesheet" href="/contents_table.css">
+    <script defer src="https://umami.aesistril.com/script.js" data-website-id="45d5e933-3d76-4577-a982-839a2dbcf648"></script>
+</head>
+<body>
+    <div class="toplevel-container">
+        <h1>&#128679;Adblocking - DNS: Network Configuration&#128679;</h1>
+        <a href="/index.html" class="link-dotted-lgreen">&lt Back to Home</a>
+    </div>
+
+    <div class="toplevel-container">
+        <div class="outer-contents-container">
+            <button type="button" id="contents-button" class="contents-container-button">Hide</button>
+            <div is="contents-list" id="page-contents" class="collapsable-contents-container"></div>
+
+            <script>
+            // Set up button to operate the wiki-style "page contents" section
+            var collButton = document.getElementsByClassName("contents-container-button");
+            var i;
+
+            for(i = 0; i < collButton.length; i++)
+            {
+                collButton[i].addEventListener("click", function() {
+                    var contentContainer = this.nextElementSibling;
+
+                    if(window.getComputedStyle(contentContainer).display === "block") {
+                        contentContainer.style.display = "none";
+                    } else {
+                        contentContainer.style.display = "block";
+                    }
+                    if(window.getComputedStyle(contentContainer).display === "block") {
+                        this.innerText = "Hide";
+                    } else {
+                        this.innerText = "Contents";
+                    }
+                });
+            }
+            </script>
+            <script src="/js/contents_table.js" defer></script>
+        </div>
+
+        <h2>Prerequisites</h2>
+        <p>
+            To start using this guide, you must have either:
+            <ul>
+                <li>Selected a public DNS server to use.</li>
+                <li>Set up your own DNS server to use.</li>
+            </ul>
+        </p>
+
+        <h2>Getting Started</h2>
+        <p>
+            Once you have selected your DNS server, you need to know its <code-cust>IPv4 address</code-cust>
+            so you can configure devices on your network to use it as the DNS source. Write this down
+            before continuing as we'll need it later.
+        </p>
+        <p>
+            Next, we have a choice depending on whether you can/want to change configuration settings
+            on your network's router. If you have administrator access (login username and password)
+            to your router, you can configure it to automatically make your preferred DNS server the
+            default for all connected devices. This is the simplest and easiest method of enabling DNS
+            Adblocking services for the whole network. Otherwise, each device must be individually
+            configured to use the preferred DNS server.
+        </p>
+        <p>
+            Both options will be covered in this guide, though the instructions for specific brands of
+            routers and individual devices may vary.
+        </p>
+
+        <h2>Router Configuration</h2>
+        <h3>1.) Getting The Router's IP Address</h3>
+        <div class="instruction-wrapper">
+            <button type="button" class="instruction-button" id="unix-button">Windows</button>
+
+            <p class="linux-instruction">
+                Open a terminal window. Type <code-cust>ip route show default</code-cust>. This
+                should show an output similar to the one below:
+            </p>
+            <p class="linux-instruction">[ip route show default image]</p>
+            <p class="linux-instruction">
+                The IP Address after <code-cust>default via</code-cust> should be the address of
+                your router.
+            </p>
+
+
+            <p class="windows-instruction">
+                Open a command prompt by pressing the "Windows" button in either the bottom middle
+                or bottom left of the screen and searching for <code-cust>cmd</code-cust> or
+                <code-cust>command prompt</code-cust>.
+            </p>
+            <p class="windows-instruction">[cmd image]</p>
+            <p class="windows-instruction">
+                Type <code-cust>ipconfig</code-cust> into the command prompt window. Depending on
+                how your computer accesses your network (wired vs wireless), you'll want to scroll
+                down until you see either <code-cust>Ethernet adapter</code-cust> or
+                <code-cust>Wireless LAN adapter</code-cust> populated with valid network information.
+                We want to take note of the <code-cust>Default Gateway</code-cust>. The Default
+                Gateway will most likely be the IP Address of the router on your network.
+            </p>
+        </div>
+        <h3>2.) Logging In to the Router</h3>
+        <p>
+            Typing <code-cust>http://[Default Gateway IP]</code-cust> into a web browser should
+            take you to your router's login page like so:
+        </p>
+        <p>[router login image]</p>
+        <p>
+            If you know the login credentials, log in now.
+        </p>
+        <p>
+            If you don't, there are three options:
+            <ul>
+                <li>If the login hasn't been changed, we can look it up online.</li>
+                <li>If the login has been changed but you own the router, you can reset the router</li>
+                <li>If the login has been changed and you don't own the router, you may need to
+                    configure individual devices to use a different DNS server.</li>
+            </ul>
+        </p>
+    </div>
+
+    <script>
+        modeButton = document.getElementById("unix-button");
+        buttonState = false;
+        update();
+
+        modeButton.addEventListener("click", function () {
+            buttonState = !buttonState;
+            update();
+        })
+
+        function update()
+        {
+            unixInst = document.getElementsByClassName("linux-instruction");
+            windowsInst = document.getElementsByClassName("windows-instruction");
+
+            if(buttonState)
+            {
+                modeButton.innerText = "Linux";
+            }
+            else
+            {
+                modeButton.innerText = "Windows";
+            }
+
+            for(var i = 0; i < unixInst.length; i++)
+            {
+                if(buttonState)
+                {
+                    unixInst[i].style.display = "block";
+                    continue;
+                }
+                unixInst[i].style.display = "none";
+
+            }
+
+            for(var i = 0; i < windowsInst.length; i++)
+            {
+                if(!buttonState)
+                {
+                    windowsInst[i].style.display = "block";
+                    continue;
+                }
+                windowsInst[i].style.display = "none";
+
+            }
+
+        }
+
+    </script>
+
+    <div class="toplevel-container" style="justify-content: center; display: flex;">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">H.T.S.G.</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://aesistril.com">Aesistril</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+    </div>
+</body>
+</html>
