@@ -18,7 +18,7 @@ body {
     padding: 10px;
 }
 
-@media (min-aspect-ratio: 1/1) { 
+@media (min-aspect-ratio: 1/1) {
     .toplevel-container {
         width: 50vw;
     }
@@ -59,4 +59,24 @@ p, b, li{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+code-cust {
+    color: #54FC54;
+    font-weight: bold;
+
+}
+
+.instruction-wrapper {
+    border: 2px dotted #FD54FD;
+    padding: 5px;
+}
+
+.instruction-button {
+    background-color: #54FC54;
+    transition-duration: 0.2s;
+}
+
+.instruction-button:hover {
+    background-color: #d854fd;
 }
