@@ -11,7 +11,7 @@
 .collapsable-contents-container {
     display: block;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
     white-space: nowrap;
 }
 
